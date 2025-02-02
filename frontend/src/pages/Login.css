@@ -1,0 +1,140 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #f1f1f1;
+  }
+  
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    height: auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #444;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  input:focus {
+    border: 1px solid #007bff;
+  }
+  
+  input::placeholder {
+    color: #888;
+    font-size: 0.8rem;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  .error {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Signup Link Styling */
+  .signup-link {
+    margin-top: 1rem;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .signup-link span {
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .signup-link span:hover {
+    color: #0056b3;
+  }
+  
+  /* Show/Hide Password Toggle */
+  .password-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .show-password-label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 0.8rem;
+  }
+  
+  .show-password-label input[type="checkbox"] {
+    margin-right: 8px;
+    width: auto;
+  }
+  
+  .show-password-label input[type="checkbox"]:checked ~ input[type="password"] {
+    -webkit-text-security: none; /* Removes the dots when checkbox is checked */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .login-container {
+      width: 90%;
+      padding: 1.5rem;
+    }
+  }
+  

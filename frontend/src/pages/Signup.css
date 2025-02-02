@@ -1,0 +1,99 @@
+/* register.css */
+.register-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 2rem;
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 24px;
+  }
+  
+  .form-group {
+    margin-bottom: 1.2rem;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #444;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  input:focus {
+    border: 1px solid #007bff;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  .error {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+  
+  .success {
+    color: #4caf50;
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Login Link Styling */
+  .login-link {
+    margin-top: 1rem;
+    font-size: 14px;
+    color: #bbb;
+  }
+  
+  .login-link span {
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .login-link span:hover {
+    color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .register-container {
+      width: 90%;
+      padding: 1.5rem;
+    }
+  }
+  
