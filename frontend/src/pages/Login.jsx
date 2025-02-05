@@ -9,18 +9,24 @@ const Login = () => {
   const [error, setError] = useState("");
   const [showPassword, setShowPassword] = useState(false); // State to toggle password visibility
   const navigate = useNavigate();
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(""); // Clear previous errors
 
     try {
-      await axios.post("http://localhost:5000/api/auth/login", {
-        email,
-        password,
-      });
+      const response = await axios.post(
+        "http://localhost:5000/api/auth/login",
+        {
+          email,
+          password,
+        }
+      );
 
-      navigate("/home"); // Redirect to homepage on successful login
+      if (response.status === 200) {
+        navigate("/home"); // Redirect to homepage on successful login
+      } else {
+        setError("Login failed. Please try again.");
+      }
     } catch (error) {
       setError(error?.response?.data?.message || "Something went wrong");
     }
