@@ -20,7 +20,7 @@ const Login = () => {
         password,
       });
 
-      navigate("/"); // Redirect to homepage on successful login
+      navigate("/home"); // Redirect to homepage on successful login
     } catch (error) {
       setError(error?.response?.data?.message || "Something went wrong");
     }
